@@ -1,0 +1,53 @@
+body{
+    
+    background-color: black;
+
+}
+
+
+#relogio{width: 400px;
+height: 400px;
+background-color:black;
+border-radius: 100%;
+margin: auto;
+position: relative;
+border: solid 2px white ;
+box-sizing: border-box;
+box-shadow: 0 0 12px 0 white;
+}
+
+
+.point{width: 5px;
+    height: 5px;
+background-color: black;
+border-radius: 100%;
+position: absolute;
+left:200px;
+top:200px;
+box-shadow: 0 0 12px 0 white;
+}
+#back{filter: invert(100%);
+position:absolute;
+width: 100%;
+}
+#sec::after{
+    content: " ";
+    display: block;
+    background: rgb(255, 255, 255);
+    height: 200px;
+    width: 2px;
+    transition: 0.25s ease-in-out;
+       
+}
+#min::after{background-color: rgb(255, 255, 255);
+    content: " ";
+    display: block;
+height: 100px;
+width: 1px;
+
+}
+#hours::after{background-color:rgb(253, 253, 253);
+    content: " ";
+    display: block;
+    height: 50px;
+}
