@@ -32,7 +32,7 @@ class relogio {
                 p2.transform = `rotate(${(new Date().getMinutes() + 270) * 6}deg)`
             }
             p3.transform = `rotate(${new Date().getSeconds() * 6}deg)`
-            p1.transform = `rotate(${new Date().getHours() * 21.8}deg)`
+            p1.transform = `rotate(${new Date().getHours() * 16.5}deg)`
         }, 1000)
 
     }
