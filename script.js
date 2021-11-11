@@ -22,7 +22,7 @@ class relogio {
         let p1 = this.pointer_h.style
         let p2 = this.pointer_m.style
         let p3 = this.pointer_s.style
-        let x=0;
+       
         const interval = setInterval(function () {
             let date = new Date()
 
@@ -34,10 +34,11 @@ class relogio {
             else {
                 p2.transform = `rotate(${(new Date().getMinutes() + 270) * 6}deg)`
             }
-            p3.transform = `rotate(${new Date().getSeconds() * 6}deg)`
+          
           
            p1.transform=`rotate( ${((new Date().getHours()+270))*30}deg)`
-       x++
+           p3.transform = `rotate(${new Date().getSeconds() * 6}deg)`
+           
         }, 1000)
 
     }
