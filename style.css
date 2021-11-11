@@ -9,9 +9,11 @@ body {
     border-radius: 100%;
     margin: auto;
     position: relative;
-    border: solid 2px white;
+    border: solid 1px white;
     box-sizing: border-box;
     box-shadow: 0 0 12px 0 white;
+    animation: clocker 5s infinite ;
+
 }
 
 .point {
@@ -87,4 +89,9 @@ body {
     font-size: 10px;
     width: 100%;
     margin-top: 0;
+}
+@keyframes clocker {
+    0%{box-shadow: 0 0 12px 0 white;}
+    50%{box-shadow: 0 0 18px 0 white;}
+    100%{box-shadow: 0 0 12px 0 white;}
 }
